@@ -1,6 +1,6 @@
 # TODO: /var/backups path is invalid (see FHS)
 Summary:	Tape Oriented Backup
-Summary(pl):	Kopie zapasowone na ta¶mie
+Summary(pl):	Kopie zapasowe na ta¶mie
 Name:		tob
 Version:	0.26
 Release:	0.1
@@ -34,12 +34,12 @@ tob jest programem s³u¿±cym do tworzenia i zarz±dzania kopiami
 zapasowymi.
 
 Patrafi tworzyæ kopie zapasowe w formacie tar lub afio i sk³adowaæ je
-w na urz±dzeniach w /dev (streamer) lub w plikach, dla pó¿niejszego
+w na urz±dzeniach w /dev (streamer) lub w plikach, dla pó¼niejszego
 nagrania ich na no¶niku optycznym. Poprzez plik konfiguracyjny mo¿na
-wskazac tobowi, ¿e ma montowaæ i odmontowywaæ urz±dzenia przed
+wskazaæ tobowi, ¿e ma montowaæ i odmontowywaæ urz±dzenia przed
 rozpoczêciem zgrywania kopii zapasowej.
 
-tob obs³uguje kopie pe³ne, ró¿nicowe i przyrostowe, potrafi oszacowac
+tob obs³uguje kopie pe³ne, ró¿nicowe i przyrostowe, potrafi oszacowaæ
 potrzebna ilo¶æ miejsca przed przyst±pieniem do kopiowania, a tak¿e
 wykonywaæ kopie maszyn zdalnych.
 
