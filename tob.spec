@@ -2,12 +2,12 @@
 Summary:	Tape Oriented Backup
 Summary(pl):	Kopie zapasowone na ta¶mie
 Name:		tob
-Version:	0.25
+Version:	0.26
 Release:	0.1
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://tinyplanet.ca/code/%{name}/%{name}-%{version}.tgz
-# Source0-md5:	fd24b96e9bce5129e22f14f17a3ff587
+# Source0-md5:	de964a6e1b2d886591c0f324f291ae83
 URL:		http://tinyplanet.ca/code/tob/
 Requires:	afio
 Requires:	sed
