@@ -1,3 +1,4 @@
+# TODO: /var/backups path is invalid (see FHS)
 Summary:	Tape Oriented Backup
 Summary(pl):	Kopie zapasowone na ta¶mie
 Name:		tob
@@ -47,14 +48,14 @@ wykonywaæ kopie maszyn zdalnych.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d	$RPM_BUILD_ROOT/{%{_var}/backups,/%{_var}/lib/tob} \
+install -d	$RPM_BUILD_ROOT{%{_var}/backups,%{_var}/lib/tob} \
 		$RPM_BUILD_ROOT{%{_sysconfdir}/tob/volumes,%{_sbindir},%{_mandir}/man8}
 
 install tob		 $RPM_BUILD_ROOT%{_sbindir}/tob
-install example.exclude	 $RPM_BUILD_ROOT%{_sysconfdir}/tob/volumes/
-install example.startdir $RPM_BUILD_ROOT%{_sysconfdir}/tob/volumes/
-install tob.rc 		 $RPM_BUILD_ROOT%{_sysconfdir}/tob/
-install tob.8		 $RPM_BUILD_ROOT%{_mandir}/man8/
+install example.exclude	 $RPM_BUILD_ROOT%{_sysconfdir}/tob/volumes
+install example.startdir $RPM_BUILD_ROOT%{_sysconfdir}/tob/volumes
+install tob.rc 		 $RPM_BUILD_ROOT%{_sysconfdir}/tob
+install tob.8		 $RPM_BUILD_ROOT%{_mandir}/man8
 
 %clean
 rm -rf $RPM_BUILD_ROOT
