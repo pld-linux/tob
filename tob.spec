@@ -5,9 +5,9 @@ Version:	0.22
 Release:	1
 License:	GPL
 Group:		Applications/Archiving
-Source0:	http://tinyplanet.ca/code/%{name}/%{name}-%{version}.tgz
-# Source0-md5:	f09070f17295a27b98e2a038b990aa09
-URL:		http://tinyplanet.ca/code/tob/
+Source0:	http://tinyplanet.ca/projects/tob/%{name}-%{version}.tgz
+# Source0-md5:	c68d2bd59daef68d4dab8c16182320c9
+URL:		http://tinyplanet.ca/projects/tob/
 Requires:	afio
 Requires:	sed
 Requires:	tar
