@@ -2,12 +2,12 @@ Summary:	Tape Oriented Backup
 Summary(pl):	Kopie zapasowone na ta¶mie
 Name:		tob
 Version:	0.25
-Release:	1
+Release:	0.1
 License:	GPL
 Group:		Applications/Archiving
-Source0:	http://tinyplanet.ca/projects/tob/%{name}-%{version}.tgz
+Source0:	http://tinyplanet.ca/code/%{name}/%{name}-%{version}.tgz
 # Source0-md5:	fd24b96e9bce5129e22f14f17a3ff587
-URL:		http://tinyplanet.ca/projects/tob/
+URL:		http://tinyplanet.ca/code/tob/
 Requires:	afio
 Requires:	sed
 Requires:	tar
@@ -47,13 +47,23 @@ wykonywaæ kopie maszyn zdalnych.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT
+install -d	$RPM_BUILD_ROOT/{%{_var}/backups,/%{_var}/lib/tob} \
+		$RPM_BUILD_ROOT{%{_sysconfdir}/tob/volumes,%{_sbindir},%{_mandir}/man8}
+
+install tob		 $RPM_BUILD_ROOT%{_sbindir}/tob
+install example.exclude	 $RPM_BUILD_ROOT%{_sysconfdir}/tob/volumes/
+install example.startdir $RPM_BUILD_ROOT%{_sysconfdir}/tob/volumes/
+install tob.rc 		 $RPM_BUILD_ROOT%{_sysconfdir}/tob/
+install tob.8		 $RPM_BUILD_ROOT%{_mandir}/man8/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/*
-%attr(755,root,root) %{_bindir}/*
-%{_datadir}/%{name}
+%doc example.* README doc sample-rc contrib
+%attr(755,root,root) %{_sbindir}/*
+%{_mandir}/man8/*
+%{_var}/backups
+%{_var}/lib/%{name}
+%{_sysconfdir}/%{name}
