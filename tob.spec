@@ -1,6 +1,6 @@
 # TODO: /var/backups path is invalid (see FHS)
 Summary:	Tape Oriented Backup
-Summary(pl):	Kopie zapasowe na ta¶mie
+Summary(pl.UTF-8):   Kopie zapasowe na taÅ›mie
 Name:		tob
 Version:	0.26
 Release:	0.1
@@ -29,19 +29,19 @@ files changed since any previous backups). It lets you determine the
 size of the backup before actually making it, maintain listings of
 made backups, make remote backups and possibly more.
 
-%description -l pl
-tob jest programem s³u¿±cym do tworzenia i zarz±dzania kopiami
+%description -l pl.UTF-8
+tob jest programem sÅ‚uÅ¼Ä…cym do tworzenia i zarzÄ…dzania kopiami
 zapasowymi.
 
-Patrafi tworzyæ kopie zapasowe w formacie tar lub afio i sk³adowaæ je
-w na urz±dzeniach w /dev (streamer) lub w plikach, dla pó¼niejszego
-nagrania ich na no¶niku optycznym. Poprzez plik konfiguracyjny mo¿na
-wskazaæ tobowi, ¿e ma montowaæ i odmontowywaæ urz±dzenia przed
-rozpoczêciem zgrywania kopii zapasowej.
+Patrafi tworzyÄ‡ kopie zapasowe w formacie tar lub afio i skÅ‚adowaÄ‡ je
+w na urzÄ…dzeniach w /dev (streamer) lub w plikach, dla pÃ³Åºniejszego
+nagrania ich na noÅ›niku optycznym. Poprzez plik konfiguracyjny moÅ¼na
+wskazaÄ‡ tobowi, Å¼e ma montowaÄ‡ i odmontowywaÄ‡ urzÄ…dzenia przed
+rozpoczÄ™ciem zgrywania kopii zapasowej.
 
-tob obs³uguje kopie pe³ne, ró¿nicowe i przyrostowe, potrafi oszacowaæ
-potrzebna ilo¶æ miejsca przed przyst±pieniem do kopiowania, a tak¿e
-wykonywaæ kopie maszyn zdalnych.
+tob obsÅ‚uguje kopie peÅ‚ne, rÃ³Å¼nicowe i przyrostowe, potrafi oszacowaÄ‡
+potrzebna iloÅ›Ä‡ miejsca przed przystÄ…pieniem do kopiowania, a takÅ¼e
+wykonywaÄ‡ kopie maszyn zdalnych.
 
 %prep
 %setup -q
