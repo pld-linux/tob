@@ -1,6 +1,6 @@
 # TODO: /var/backups path is invalid (see FHS)
 Summary:	Tape Oriented Backup
-Summary(pl.UTF-8):   Kopie zapasowe na taśmie
+Summary(pl.UTF-8):	Kopie zapasowe na taśmie
 Name:		tob
 Version:	0.26
 Release:	0.1
